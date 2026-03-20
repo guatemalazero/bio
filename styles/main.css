@@ -26,6 +26,10 @@ body::before {
     pointer-events: none;
 }
 
+.page-content {
+    flex: 1;
+}
+
 .page-header {
     position: fixed;
     top: 0;
@@ -55,12 +59,9 @@ body::before {
     text-decoration: underline;
 }
 
-.page-content {
-    flex: 1;
-    display: flex;
-}
 
 .title {
+    height: 100vh;
     flex: 1;
     color: white;
     display: flex;
@@ -77,7 +78,7 @@ body::before {
 }
 
 
-.title__inner h1 {
+.title__inner h2 {
     font-size: 100px;
 }
 
@@ -89,4 +90,92 @@ body::before {
     max-width: 700px;
     font-size: 20px;
     text-align: center;
+}
+
+.work {
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 16px
+}
+
+.work__inner h2 {
+    font-size: 70px;
+}
+
+.grid-work-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px
+}
+
+.work-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.work-card h3 {
+    font-size: 35px;
+    font-weight: 250;
+}
+
+.work-card p {
+    max-width: 350px;
+    font-size: 18px;
+}
+
+.skills {
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    padding: 16px;
+}
+
+.skills__inner h2 {
+    font-size: 70px;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    gap: 16px
+}
+
+
+.skill-spans {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.grid-skills-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px
 }
